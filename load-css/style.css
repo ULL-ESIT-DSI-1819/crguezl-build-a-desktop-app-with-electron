@@ -1,0 +1,9 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: blue;
+  font-family: 'Open Sans', sans-sans-serif;
+  text-align: center;
+}

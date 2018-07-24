@@ -1,0 +1,14 @@
+{
+  "name": "load-css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "../node_modules/.bin/electron main.js",
+    "test": "../node_modules/.bin/electron main.js"
+  },
+  "keywords": [],
+  "author": "Casiano Rodriguez-Leon <casiano.rodriguez.leon@gmail.com> (https://github.com/crguezl)",
+  "license": "ISC",
+  "dependencies": {}
+}

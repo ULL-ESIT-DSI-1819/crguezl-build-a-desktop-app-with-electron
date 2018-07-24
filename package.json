@@ -1,0 +1,15 @@
+{
+  "name": "build-a-desktop-app",
+  "version": "1.0.0",
+  "description": "* [https://egghead.io](https://egghead.io/) * [electron course at egghead](https://egghead.io/browse/frameworks/electron) by Cameron Nokes",
+  "main": "index.js",
+  "scripts": {
+    "css": "cd load-css && electron main.js"
+  },
+  "keywords": ["electron"],
+  "author": "Casiano Rodriguez-Leon <casiano.rodriguez.leon@gmail.com> (https://github.com/crguezl)",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^2.0.5"
+  }
+}
