@@ -27,7 +27,7 @@ app.on('ready', function () {
 
   const template = [
     {
-      label: 'Electrones', // No aparece
+      label: 'Edit', // No aparece
       submenu: [
         { role: 'undo' },
         { role: 'redo' },
@@ -37,8 +37,7 @@ app.on('ready', function () {
         { role: 'paste' },
         { role: 'pasteandmatchstyle' },
         { role: 'delete' },
-        { role: 'selectall' },
-        {role: 'quit'}
+        { role: 'selectall' }
       ]
     },
     {
@@ -84,6 +83,44 @@ app.on('ready', function () {
       ]
     }
   ];
+
+  if (process.platform === 'darwin') {
+    template.unshift({
+      label: app.getName(),
+      submenu: [
+        {role: 'about'},
+        {type: 'separator'},
+        {role: 'services', submenu: []},
+        {type: 'separator'},
+        {role: 'hide'},
+        {role: 'hideothers'},
+        {role: 'unhide'},
+        {type: 'separator'},
+        {role: 'quit'}
+      ]
+    })
+
+      // Edit menu
+      template[1].submenu.push(
+        {type: 'separator'},
+        {
+          label: 'Speech',
+          submenu: [
+            {role: 'startspeaking'},
+            {role: 'stopspeaking'}
+          ]
+        }
+      )
+
+    // Window menu
+    template[3].submenu = [
+      {role: 'close'},
+      {role: 'minimize'},
+      {role: 'zoom'},
+      {type: 'separator'},
+      {role: 'front'}
+      ]
+  }
 
   const menu = Menu.buildFromTemplate(template);
   Menu.setApplicationMenu(menu);

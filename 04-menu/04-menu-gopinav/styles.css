@@ -1,4 +1,4 @@
-::selection { background: black; /* WebKit/Blink Browsers */ }
+::selection { background: pink; /* WebKit/Blink Browsers */ }
 h1{
     color: orange;
 }
