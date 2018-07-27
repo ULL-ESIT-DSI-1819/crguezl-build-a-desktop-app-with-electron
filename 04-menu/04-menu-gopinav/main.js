@@ -2,7 +2,7 @@ const path = require('path')
 const url = require('url')
 const electron = require("electron");
 const {app, BrowserWindow, Menu} = electron;
-const {MenuItem, globalShortcut} = electron;
+const {MenuItem, globalShortcut, shell} = electron;
 
 let win;
 
@@ -54,10 +54,13 @@ app.on('ready', function () {
           type: 'separator'
         },
         {
-          label: 'Submenu2',
+          label: 'Monarca',
           click: () => {
-            console.log("Clicked sub menu 2")
-          }
+            console.log("Clicked Monarca");
+            shell.beep();
+            shell.openItem(path.join(__dirname,"images/7.jpg"));
+          },
+          accelerator: 'CmdOrCtrl+Alt+M'
         }
       ]
     },
@@ -67,7 +70,7 @@ app.on('ready', function () {
         {
           label: 'About Electron',
           click: function () {
-            electron.shell.openExternal('http://electron.atom.io');
+            shell.openExternal('http://electron.atom.io');
           },
           accelerator: 'CmdOrCtrl + Shift + H'
         }
