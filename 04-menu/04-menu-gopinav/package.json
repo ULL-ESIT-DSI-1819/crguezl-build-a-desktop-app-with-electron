@@ -6,6 +6,6 @@
     "electron": "^1.6.11"
   },
   "scripts": {
-    "start": "electron ."
+    "start": "../node_modules/.bin/electron main.js"
   }
 }

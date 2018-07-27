@@ -1,0 +1,16 @@
+{
+  "name": "menus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "ccnokes": "cd 04-menu-ccnokes && electron main.js",
+    "gopinav": "cd 04-menu-gopinav && electron main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "*"
+  }
+}
