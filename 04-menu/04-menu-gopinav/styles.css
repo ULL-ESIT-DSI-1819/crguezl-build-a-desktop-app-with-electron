@@ -1,3 +1,4 @@
+::selection { background: black; /* WebKit/Blink Browsers */ }
 h1{
     color: orange;
 }

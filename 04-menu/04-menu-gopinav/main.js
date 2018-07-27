@@ -1,12 +1,8 @@
-const electron = require("electron");
-const app = electron.app;
-const BrowserWindow = electron.BrowserWindow;
-//const {app, BrowserWindow} = require('electron')
 const path = require('path')
 const url = require('url')
-const Menu = electron.Menu;
-const MenuItem = electron.MenuItem
-const globalShortcut = electron.globalShortcut
+const electron = require("electron");
+const {app, BrowserWindow, Menu} = electron;
+const {MenuItem, globalShortcut} = electron;
 
 let win;
 
@@ -31,7 +27,7 @@ app.on('ready', function () {
 
   const template = [
     {
-      label: 'Edit',
+      label: 'Electrones', // No aparece
       submenu: [
         { role: 'undo' },
         { role: 'redo' },
@@ -41,7 +37,8 @@ app.on('ready', function () {
         { role: 'paste' },
         { role: 'pasteandmatchstyle' },
         { role: 'delete' },
-        { role: 'selectall' }
+        { role: 'selectall' },
+        {role: 'quit'}
       ]
     },
     {
@@ -57,12 +54,15 @@ app.on('ready', function () {
           type: 'separator'
         },
         {
-          label: 'Submenu2'
+          label: 'Submenu2',
+          click: () => {
+            console.log("Clicked sub menu 2")
+          }
         }
       ]
     },
     {
-      label: 'Help',
+      label: 'Ayuda',
       submenu: [
         {
           label: 'About Electron',
