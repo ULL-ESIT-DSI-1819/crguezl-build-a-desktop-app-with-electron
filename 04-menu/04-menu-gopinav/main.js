@@ -159,6 +159,7 @@ app.on('browser-window-created', function (event, win) {
   ))
   ctxMenu.append(new MenuItem({ role: 'selectall' }))
   win.webContents.on('context-menu', function (e, params) {
+    console.log(e);
     ctxMenu.popup(win, params.x, params.y)
   })
 })

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>03-load.js</title>
+  <style>::selection { background: pink; /* WebKit/Blink Browsers */ }</style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js" onload="window.$ = window.jQuery = module.exports;"></script>
+</head>
+<body>
+  <h1>You are running Electron version: <br/>
+    <span id="version"></span>
+  </h1>
+  <h1><span id="output"></span>
+  </h1>
+  <img src="images/7.jpg" alt="">
+  <script>require("./renderer.js")</script>
+</body>
+</html>
