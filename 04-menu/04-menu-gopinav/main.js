@@ -27,7 +27,7 @@ app.on('ready', function () {
 
   const template = [
     {
-      label: 'Edit', // No aparece
+      label: 'Edit',
       submenu: [
         { role: 'undo' },
         { role: 'redo' },
@@ -76,7 +76,7 @@ app.on('ready', function () {
       ]
     },
     {
-      role: 'window',
+      role: 'Window',
       submenu: [
         { role: 'minimize' },
         { role: 'close' }
@@ -113,7 +113,7 @@ app.on('ready', function () {
       )
 
     // Window menu
-    template[3].submenu = [
+    template[template.length-1].submenu = [
       {role: 'close'},
       {role: 'minimize'},
       {role: 'zoom'},
