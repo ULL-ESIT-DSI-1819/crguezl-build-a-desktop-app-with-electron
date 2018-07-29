@@ -22,7 +22,7 @@ My code from the course
 
 ### 04: Electron Menu Module
 
-1. See examplex in directory [04-menu](04-menu/)
+1. See examples in directory [04-menu](04-menu/)
 1. [Gopinav tutorial: Application Menu](https://www.youtube.com/watch?v=MGC2W-dJtYM&list=PLC3y8-rFHvwiCJD3WrAFUrIMkGVDE0uqW&index=7)
 2. [Gopinav Tutorial: Context Menu](https://www.youtube.com/watch?v=MkVLaM9JAxM&list=PLC3y8-rFHvwiCJD3WrAFUrIMkGVDE0uqW&index=8)
 3. [Gopinav Tutorial: Accelerators and global Shortcuts](https://www.youtube.com/watch?v=-POUsDEfI14&list=PLC3y8-rFHvwiCJD3WrAFUrIMkGVDE0uqW&index=9)
