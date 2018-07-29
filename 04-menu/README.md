@@ -16,3 +16,10 @@
 ## GitHub Repos
 
 * [Electron-Tutorials repo at ULL-ESIT-DSI-1819](https://github.com/ULL-ESIT-DSI-1819/Electron-Tutorials-gopinav) forked from [gopinav/Electron-Tutorials](https://github.com/gopinav/Electron-Tutorials)
+
+## Contents
+
+4. Menus
+    * [Menu by ccnokes](04-menu-ccnokes/README.md)
+    * [Menu by Gopinav](04-menu-gopinav/README.md)
+    * [Electron Context Menu](04-menu-electron-context-menu/README.md)
