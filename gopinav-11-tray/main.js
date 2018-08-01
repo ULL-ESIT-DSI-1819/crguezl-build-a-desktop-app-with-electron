@@ -23,6 +23,7 @@ app.on('ready', function(){
   let template = [
     {
       label: 'Audio',
+      icon: path.join(__dirname,'icon.png'),
       submenu: [
         {
           label: 'Low',
@@ -37,11 +38,12 @@ app.on('ready', function(){
     },
     {
       label: 'Video',
+      icon: path.join(__dirname,'addicon.png'),
       submenu: [
         {
           label: '1280x720',
           type: 'radio',
-          checked: true
+          checked: true,
         },
         {
           label: '1920x1080',
