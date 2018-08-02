@@ -13,7 +13,9 @@
   "author": "Casiano Rodriguez-Leon <casiano.rodriguez.leon@gmail.com> (https://github.com/crguezl)",
   "license": "ISC",
   "dependencies": {
-    "electron": "^2.0.5"
+    "asar": "^0.14.3",
+    "electron": "^2.0.5",
+    "electron-packager": "^12.1.0"
   },
   "devDependencies": {
     "devtron": "^1.4.0"

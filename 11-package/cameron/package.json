@@ -1,0 +1,24 @@
+{
+  "name": "package",
+  "productName": "HelloWorld",
+  "author": "Casiano",
+  "version": "1.0.0",
+  "description": "Electron app demonstrating electron-packager",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js",
+    "package" : "",
+    "build": "../../node_modules/.bin/electron-packager . hello-world && cp build/icon.icns hello-world-darwin-x64/hello-world.app/Contents/Resources/electron.icns"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "*",
+    "electron-packager": "*",
+    "asar": "*"
+  },
+  "build": {
+    "files": "!build-assets${/*}",
+    "appId": "com.Egghead.HelloWorld"
+  }
+}

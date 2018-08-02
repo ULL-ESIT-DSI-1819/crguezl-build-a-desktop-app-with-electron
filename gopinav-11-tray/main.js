@@ -1,6 +1,6 @@
 const path = require('path');
 const url = require('url');
-const { app, Tray, Menu, BrowserWindow } = require("electron");
+const { app, Tray, Menu, BrowserWindow, globalShortcut } = require("electron");
 
 const debug = /--debug/.test(process.argv[2])
 
@@ -9,7 +9,7 @@ const iconPath = path.join(__dirname, 'ytlogo.png');
 let tray = null;
 let win = null;
 
-app.on('ready', function(){
+let devTools = function() {
   win = new BrowserWindow({ width:800, height: 600, show: false});
   win.loadFile(path.join(__dirname, "index.html"));
   // Launch fullscreen with DevTools open, usage: npm run debug
@@ -18,6 +18,14 @@ app.on('ready', function(){
     //win.maximize()
     require('devtron').install()
   }
+  win.show();
+  win.toggleDevTools();
+  // win.webContents.openDevTools()
+  win.maximize()
+  require('devtron').install()
+};
+
+app.on('ready', function(){
 
   tray = new Tray(iconPath)
   let template = [
@@ -50,8 +58,20 @@ app.on('ready', function(){
           type: 'radio',
         }
       ]
+    },
+    {
+      label: 'Toggle DevTools',
+      //accelerator: 'Alt+Command+I', // not working!
+      click: devTools
+    },
+    {
+      label: "Quit",
+      accelerator: "CmdOrCtrl+Q", // not working
+      selector: "terminate:"
     }
-  ]
+  ];
+  globalShortcut.register('Alt+Cmd+I', devTools )
+
 
   const contextMenu = Menu.buildFromTemplate(template)
   tray.setContextMenu(contextMenu)
@@ -70,3 +90,7 @@ app.on('activate', () => {
   if (win === null) createWindow();
   console.log("activate!!");
 });
+
+app.on('will-quit', function () {
+  globalShortcut.unregisterAll()
+})
