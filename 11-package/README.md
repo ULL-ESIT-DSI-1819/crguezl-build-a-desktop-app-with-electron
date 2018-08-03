@@ -23,6 +23,9 @@ In this video we look at how to package our application as well as make it so th
 
 * [YouTube Video: Development with Electron: Episode 5 - Packaging Applications](https://youtu.be/t6GpARjKwTA)
 * [Electron packager tutorial](https://www.christianengvall.se/electron-packager-tutorial/)
+* [asar](https://github.com/electron/asar): Asar is a simple extensive archive format, it works like tar that concatenates all files together without compression, while having random access support
+* [iConvert Icons is an online icon converter to convert PNG to ICO, ICNS, and app icons for Windows, Mac OS X, Linux, iOS, and Android](https://iconverticons.com/online/) 
+    - Have you ever discovered the perfect icon set, only to find it wasn't available for your particular platform? iConvert solves the problem: With this free online icon converter, you can convert any icon or image into an icon specifically for your platform. It doesn't matter if it's PNG, ICO, ICNS, SVG, or whether you run Windows, Mac OS X, Linux, or have an iOS or Android device. Simply upload a file in one of the supported formats, and iConvert Icons will quickly create your icon!
 
 ## Janez Cadez
 
