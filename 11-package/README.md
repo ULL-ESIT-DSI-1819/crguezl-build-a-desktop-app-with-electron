@@ -23,9 +23,13 @@ In this video we look at how to package our application as well as make it so th
 
 * [YouTube Video: Development with Electron: Episode 5 - Packaging Applications](https://youtu.be/t6GpARjKwTA)
 * [Electron packager tutorial](https://www.christianengvall.se/electron-packager-tutorial/)
+    - In this [electron packager](https://github.com/electron-userland/electron-packager) tutorial we will look at how to create MacOS, Windows and Linux executables with an app icon. This is also a continuation of the [Electron app icon](/electron-app-icons/) post, so start there if you haven’t read it (It’s short, i promise).
+    - I add this code to the [Electron tutorial app on github](https://github.com/crilleengvall/electron-tutorial-app). Just look at that repo if you want to see all the code.
+    - In this tutorial I package the application on Windows, macOS and Ubuntu Linux. There are some information about building Windows apps from non-Windows platforms in the [Electron packager readme](https://github.com/electron-userland/electron-packager#building-windows-apps-from-non-windows-platforms "Electron packager readme").
 * [asar](https://github.com/electron/asar): Asar is a simple extensive archive format, it works like tar that concatenates all files together without compression, while having random access support
-* [iConvert Icons is an online icon converter to convert PNG to ICO, ICNS, and app icons for Windows, Mac OS X, Linux, iOS, and Android](https://iconverticons.com/online/) 
+* [iConvert Icons is an online icon converter to convert PNG to ICO, ICNS, and app icons for Windows, Mac OS X, Linux, iOS, and Android](https://iconverticons.com/online/)
     - Have you ever discovered the perfect icon set, only to find it wasn't available for your particular platform? iConvert solves the problem: With this free online icon converter, you can convert any icon or image into an icon specifically for your platform. It doesn't matter if it's PNG, ICO, ICNS, SVG, or whether you run Windows, Mac OS X, Linux, or have an iOS or Android device. Simply upload a file in one of the supported formats, and iConvert Icons will quickly create your icon!
+* [makeicns](http://amnoid.de/icns/makeicns.html) Create icns files from the command line
 
 ## Janez Cadez
 

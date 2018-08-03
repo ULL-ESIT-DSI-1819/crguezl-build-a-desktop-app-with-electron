@@ -8,9 +8,11 @@
   "scripts": {
     "icon": "makeicns -16 build/pl-ull-logo.png  -32  build/pl-ull-logo.png -128 build/pl-ull-logo.png -out build/icon.icns",
     "start": "../../node_modules/.bin/electron main.js",
+    "cleanapp" : "rm -fR hello-world-darwin-x64/hello-world.app/Contents/Resources/app",
     "package" : "../../node_modules/.bin/asar pack hello-world-darwin-x64/hello-world.app/Contents/Resources/app hello-world-darwin-x64/hello-world.app/Contents/Resources/app.asar && rm -fR hello-world-darwin-x64/hello-world.app/Contents/Resources/app",
-    "build": "../../node_modules/.bin/electron-packager . hello-world && cp build/icon.icns hello-world-darwin-x64/hello-world.app/Contents/Resources/electron.icns",
-    "clean": "rm -fR hello-world-darwin-x64"
+    "build": "../../node_modules/.bin/electron-packager . hello-world --overwrite --asar --icon build/icon.icns",
+    "clean": "rm -fR hello-world-darwin-x64",
+    "help": "../../node_modules/.bin/electron-packager --help"
   },
   "keywords": [],
   "license": "ISC",
