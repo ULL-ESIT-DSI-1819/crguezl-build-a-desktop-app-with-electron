@@ -6,8 +6,9 @@
   "description": "Electron app demonstrating electron-packager. See https://youtu.be/t6GpARjKwTA",
   "main": "main.js",
   "scripts": {
-    "start": "electron main.js",
-    "package" : "../../node_modules/.bin/asar pack hello-world-darwin-x64/hello-world.app/Contents/Resources/app hello-world-darwin-x64/hello-world.app/Contents/Resources/app.asar",
+    "icon": "makeicns -16 build/pl-ull-logo.png  -32  build/pl-ull-logo.png -128 build/pl-ull-logo.png -out build/icon.icns",
+    "start": "../../node_modules/.bin/electron main.js",
+    "package" : "../../node_modules/.bin/asar pack hello-world-darwin-x64/hello-world.app/Contents/Resources/app hello-world-darwin-x64/hello-world.app/Contents/Resources/app.asar && rm -fR hello-world-darwin-x64/hello-world.app/Contents/Resources/app",
     "build": "../../node_modules/.bin/electron-packager . hello-world && cp build/icon.icns hello-world-darwin-x64/hello-world.app/Contents/Resources/electron.icns",
     "clean": "rm -fR hello-world-darwin-x64"
   },
