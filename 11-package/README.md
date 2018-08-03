@@ -22,7 +22,7 @@ In this video we look at how to package our application as well as make it so th
 
 
 * [YouTube Video: Development with Electron: Episode 5 - Packaging Applications](https://youtu.be/t6GpARjKwTA)
-* [Electron packager tutorial](https://www.christianengvall.se/electron-packager-tutorial/)
+* [Electron packager tutorial](https://www.christianengvall.se/electron-packager-tutorial/) by Christian Engvall
     - In this [electron packager](https://github.com/electron-userland/electron-packager) tutorial we will look at how to create MacOS, Windows and Linux executables with an app icon. This is also a continuation of the [Electron app icon](/electron-app-icons/) post, so start there if you haven’t read it (It’s short, i promise).
     - I add this code to the [Electron tutorial app on github](https://github.com/crilleengvall/electron-tutorial-app). Just look at that repo if you want to see all the code.
     - In this tutorial I package the application on Windows, macOS and Ubuntu Linux. There are some information about building Windows apps from non-Windows platforms in the [Electron packager readme](https://github.com/electron-userland/electron-packager#building-windows-apps-from-non-windows-platforms "Electron packager readme").

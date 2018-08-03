@@ -20,9 +20,5 @@
     "electron": "*",
     "electron-packager": "*",
     "asar": "*"
-  },
-  "build": {
-    "files": "!build-assets${/*}",
-    "appId": "com.Egghead.HelloWorld"
   }
 }
