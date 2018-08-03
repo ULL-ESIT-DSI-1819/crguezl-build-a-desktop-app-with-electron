@@ -3,12 +3,13 @@
   "productName": "HelloWorld",
   "author": "Casiano",
   "version": "1.0.0",
-  "description": "Electron app demonstrating electron-packager",
+  "description": "Electron app demonstrating electron-packager. See https://youtu.be/t6GpARjKwTA",
   "main": "main.js",
   "scripts": {
     "start": "electron main.js",
-    "package" : "",
-    "build": "../../node_modules/.bin/electron-packager . hello-world && cp build/icon.icns hello-world-darwin-x64/hello-world.app/Contents/Resources/electron.icns"
+    "package" : "../../node_modules/.bin/asar pack hello-world-darwin-x64/hello-world.app/Contents/Resources/app hello-world-darwin-x64/hello-world.app/Contents/Resources/app.asar",
+    "build": "../../node_modules/.bin/electron-packager . hello-world && cp build/icon.icns hello-world-darwin-x64/hello-world.app/Contents/Resources/electron.icns",
+    "clean": "rm -fR hello-world-darwin-x64"
   },
   "keywords": [],
   "license": "ISC",
