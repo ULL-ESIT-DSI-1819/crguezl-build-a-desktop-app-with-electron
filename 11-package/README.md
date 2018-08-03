@@ -8,10 +8,10 @@ Electron executable. Now let’s learn how to package our app into a
 .app or .exe file so that we can distribute it to other users.
 
 Electron doesn't provide this functionality out of the box, so we'll
-use a popular and easy-to-use npm package called 
+use a popular and easy-to-use npm package called
 electron-builder
-to handle the details. 
-electron-builder 
+to handle the details.
+electron-builder
 will automatically grab our .ico or .icns file and use that as our app's icon.
 
 * [Repo build-a-desktop-app-with-electron. Folder 11-package](https://github.com/ULL-ESIT-DSI-1819/build-a-desktop-app-with-electron/tree/master/11-package)
@@ -22,6 +22,7 @@ In this video we look at how to package our application as well as make it so th
 
 
 * [YouTube Video: Development with Electron: Episode 5 - Packaging Applications](https://youtu.be/t6GpARjKwTA)
+* [Electron packager tutorial](https://www.christianengvall.se/electron-packager-tutorial/)
 
 ## Janez Cadez
 
