@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "css": "cd 02-load-css && electron main.js",
-    "js": "cd 03-load-js && electron main.js"
+    "js": "cd 03-load-js && electron main.js",
+    "tray": "cd gopinav-11-tray && ../node_modules/.bin/electron main.js",
+    "shell": "cd gopinav-10-shell && ../node_modules/.bin/electron main.js",
+    "quote": "cd gopinav-05-quote-widget && electron main.js"
   },
   "keywords": [
     "electron"
@@ -15,7 +18,8 @@
   "dependencies": {
     "asar": "^0.14.3",
     "electron": "^2.0.5",
-    "electron-packager": "^12.1.0"
+    "electron-packager": "^12.1.0",
+    "request": "^2.88.0"
   },
   "devDependencies": {
     "devtron": "^1.4.0"

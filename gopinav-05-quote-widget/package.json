@@ -1,0 +1,11 @@
+{
+  "name": "quote-widget",
+  "version": "1.0.0",
+  "main": "main.js",
+  "devDependencies": {
+    "electron": "*"
+  },
+  "scripts": {
+      "start": "../node_modules/.bin/electron main.js"
+  }
+}
